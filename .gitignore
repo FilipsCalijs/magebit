@@ -1,0 +1,32 @@
+# Node modules
+/node_modules
+
+# Build / public folders
+/public/hot
+/public/storage
+
+# Storage keys
+/storage/*.key
+
+# Composer vendor
+/vendor
+
+# Environment / cache
+.env.backup
+.phpunit.result.cache
+
+# Docker / Homestead
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+
+# Logs / IDE
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+
+# Big binaries
+*.deb
+chromedriver*
+*.zip

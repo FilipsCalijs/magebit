@@ -1,0 +1,50 @@
+services:
+  laravel:
+    build:
+      context: .
+      dockerfile: .docker/laravel/Dockerfile
+    working_dir: /app
+    environment:
+      - WEB_DOCUMENT_ROOT=/app/public
+      - PHP_DATE_TIMEZONE=UTC
+      - PHP_DISPLAY_ERRORS=1
+      - PHP_MEMORY_LIMIT=512M
+    volumes:
+      - .:/app
+    ports:
+      - "8090:80"
+    depends_on:
+      mariadb:
+        condition: service_healthy
+      valkey:
+        condition: service_started
+
+  mariadb:
+    image: mariadb:10.6
+    environment:
+      - MYSQL_USER=laravel
+      - MYSQL_PASSWORD=laravel
+      - MYSQL_DATABASE=laravel
+      - MYSQL_ROOT_PASSWORD=laravel
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3310:3306"
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      start_period: 10s
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  valkey:
+    image: valkey/valkey:8-alpine
+    command:
+      - --maxmemory 128mb
+      - --maxmemory-policy allkeys-lru
+    volumes:
+      - valkey_data:/data
+
+volumes:
+  db_data:
+  valkey_data:

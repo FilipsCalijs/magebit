@@ -1,0 +1,18 @@
+version: 1.0
+configuration:
+  has_webserver: true
+  readonly_paths:
+    - tests/*
+  scoring:
+    command: yes | bash env/install.sh && rm -f clover.xml junit.xml && composer install && npm install && php artisan migrate:refresh && php artisan dusk:chrome-driver --detect && npm run start-test && php artisan dusk --log-junit junit.xml; npm run stop-test
+    files:
+       - junit.xml
+  ide_config:
+    default_open_files:
+      - app/Http/Controllers/AccountController.php
+      - resources/views/page/account.blade.php
+      - resources/sass/app.scss
+    project_menu:
+      run: yes | php artisan migrate && npm run watch
+      install: composer install && npm install
+      test: composer install && npm install && php artisan migrate:refresh && php artisan dusk:chrome-driver --detect && npm run start-test && php artisan dusk --log-junit junit.xml; npm run stop-test; php artisan migrate
