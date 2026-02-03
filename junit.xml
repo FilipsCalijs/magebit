@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="/app/tests" tests="30" assertions="0" errors="30" warnings="0" failures="0" skipped="0" time="7.853801">
-    <testsuite name="Tests\Browser\AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" tests="13" assertions="0" errors="13" warnings="0" failures="0" skipped="0" time="3.794040">
-      <testcase name="testCanAccessIndex" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="59" assertions="0" time="0.397822">
+  <testsuite name="/app/tests" tests="30" assertions="0" errors="30" warnings="0" failures="0" skipped="0" time="7.810576">
+    <testsuite name="Tests\Browser\AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" tests="13" assertions="0" errors="13" warnings="0" failures="0" skipped="0" time="3.801101">
+      <testcase name="testCanAccessIndex" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="59" assertions="0" time="0.395406">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testCanAccessIndex
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -19,7 +19,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppFunctionalityTest.php:64</error>
       </testcase>
-      <testcase name="testLoginEmailValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="73" assertions="0" time="0.277958">
+      <testcase name="testLoginEmailValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="73" assertions="0" time="0.276861">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testLoginEmailValidation
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -36,7 +36,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppFunctionalityTest.php:81</error>
       </testcase>
-      <testcase name="testRegisterEmailValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="90" assertions="0" time="0.287260">
+      <testcase name="testRegisterEmailValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="90" assertions="0" time="0.288084">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testRegisterEmailValidation
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -53,7 +53,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppFunctionalityTest.php:98</error>
       </testcase>
-      <testcase name="testRegisterPasswordValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="107" assertions="0" time="0.278683">
+      <testcase name="testRegisterPasswordValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="107" assertions="0" time="0.269150">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testRegisterPasswordValidation
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -70,7 +70,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppFunctionalityTest.php:115</error>
       </testcase>
-      <testcase name="testLoginErrorMessage" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="124" assertions="0" time="0.281851">
+      <testcase name="testLoginErrorMessage" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="124" assertions="0" time="0.266697">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testLoginErrorMessage
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -87,7 +87,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppFunctionalityTest.php:133</error>
       </testcase>
-      <testcase name="testRegisterSuccessMessage" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="142" assertions="0" time="0.271369">
+      <testcase name="testRegisterSuccessMessage" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="142" assertions="0" time="0.290367">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testRegisterSuccessMessage
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -104,7 +104,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppFunctionalityTest.php:154</error>
       </testcase>
-      <testcase name="testSuccessRouteGuard" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="163" assertions="0" time="0.278807">
+      <testcase name="testSuccessRouteGuard" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="163" assertions="0" time="0.312147">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testSuccessRouteGuard
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -121,7 +121,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppFunctionalityTest.php:168</error>
       </testcase>
-      <testcase name="testDoesLoginFail" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="177" assertions="0" time="0.286412">
+      <testcase name="testDoesLoginFail" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="177" assertions="0" time="0.267580">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testDoesLoginFail
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -138,7 +138,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppFunctionalityTest.php:186</error>
       </testcase>
-      <testcase name="testDoesRegisterFail" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="195" assertions="0" time="0.275732">
+      <testcase name="testDoesRegisterFail" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="195" assertions="0" time="0.280742">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testDoesRegisterFail
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -155,7 +155,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppFunctionalityTest.php:207</error>
       </testcase>
-      <testcase name="testDoesRegisterSucceed" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="216" assertions="0" time="0.287928">
+      <testcase name="testDoesRegisterSucceed" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="216" assertions="0" time="0.279854">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testDoesRegisterSucceed
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -172,7 +172,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppFunctionalityTest.php:229</error>
       </testcase>
-      <testcase name="testDoesLoginSucceed" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="238" assertions="0" time="0.302822">
+      <testcase name="testDoesLoginSucceed" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="238" assertions="0" time="0.297894">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testDoesLoginSucceed
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -189,7 +189,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppFunctionalityTest.php:248</error>
       </testcase>
-      <testcase name="testSuccessPageContent" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="257" assertions="0" time="0.289420">
+      <testcase name="testSuccessPageContent" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="257" assertions="0" time="0.281645">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testSuccessPageContent
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -206,7 +206,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppFunctionalityTest.php:270</error>
       </testcase>
-      <testcase name="testLogout" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="279" assertions="0" time="0.277976">
+      <testcase name="testLogout" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/app/tests/Browser/AppFunctionalityTest.php" line="279" assertions="0" time="0.294675">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppFunctionalityTest::testLogout
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -224,8 +224,8 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/tests/Browser/AppFunctionalityTest.php:288</error>
       </testcase>
     </testsuite>
-    <testsuite name="Tests\Browser\AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" tests="16" assertions="0" errors="16" warnings="0" failures="0" skipped="0" time="3.817710">
-      <testcase name="testIsCorrectFontFamily" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="109" assertions="0" time="0.233404">
+    <testsuite name="Tests\Browser\AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" tests="16" assertions="0" errors="16" warnings="0" failures="0" skipped="0" time="3.776565">
+      <testcase name="testIsCorrectFontFamily" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="109" assertions="0" time="0.228473">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testIsCorrectFontFamily
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -242,7 +242,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:119</error>
       </testcase>
-      <testcase name="testIsButtonCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="126" assertions="0" time="0.239284">
+      <testcase name="testIsButtonCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="126" assertions="0" time="0.241449">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testIsButtonCorrectColor
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -259,7 +259,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:139</error>
       </testcase>
-      <testcase name="testIsHeaderIconsCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="146" assertions="0" time="0.231010">
+      <testcase name="testIsHeaderIconsCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="146" assertions="0" time="0.229152">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testIsHeaderIconsCorrectColor
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -276,7 +276,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:159</error>
       </testcase>
-      <testcase name="testIsHeaderLinksCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="166" assertions="0" time="0.232387">
+      <testcase name="testIsHeaderLinksCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="166" assertions="0" time="0.236813">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testIsHeaderLinksCorrectColor
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -293,7 +293,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:179</error>
       </testcase>
-      <testcase name="testIsHeaderLinksWithoutUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="186" assertions="0" time="0.237452">
+      <testcase name="testIsHeaderLinksWithoutUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="186" assertions="0" time="0.236872">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testIsHeaderLinksWithoutUnderline
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -310,7 +310,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:199</error>
       </testcase>
-      <testcase name="testIsHeaderLinksCorrectWeight" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="206" assertions="0" time="0.241082">
+      <testcase name="testIsHeaderLinksCorrectWeight" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="206" assertions="0" time="0.242394">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testIsHeaderLinksCorrectWeight
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -327,7 +327,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:218</error>
       </testcase>
-      <testcase name="testIsHeaderLinksUppercase" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="225" assertions="0" time="0.242343">
+      <testcase name="testIsHeaderLinksUppercase" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="225" assertions="0" time="0.236821">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testIsHeaderLinksUppercase
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -344,7 +344,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:235</error>
       </testcase>
-      <testcase name="testDoesHeaderBarHaveShadow" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="242" assertions="0" time="0.236376">
+      <testcase name="testDoesHeaderBarHaveShadow" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="242" assertions="0" time="0.221721">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testDoesHeaderBarHaveShadow
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -361,7 +361,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:253</error>
       </testcase>
-      <testcase name="testForgotPasswordColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="260" assertions="0" time="0.239780">
+      <testcase name="testForgotPasswordColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="260" assertions="0" time="0.241759">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testForgotPasswordColor
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -378,7 +378,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:272</error>
       </testcase>
-      <testcase name="testForgotPasswordUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="279" assertions="0" time="0.237758">
+      <testcase name="testForgotPasswordUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="279" assertions="0" time="0.244929">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testForgotPasswordUnderline
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -395,7 +395,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:290</error>
       </testcase>
-      <testcase name="testFooterLinksColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="297" assertions="0" time="0.236879">
+      <testcase name="testFooterLinksColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="297" assertions="0" time="0.228256">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testFooterLinksColor
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -412,7 +412,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:310</error>
       </testcase>
-      <testcase name="testFooterLinksUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="317" assertions="0" time="0.243613">
+      <testcase name="testFooterLinksUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="317" assertions="0" time="0.232454">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testFooterLinksUnderline
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -429,7 +429,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:330</error>
       </testcase>
-      <testcase name="testCheckboxStyling" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="337" assertions="0" time="0.238840">
+      <testcase name="testCheckboxStyling" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="337" assertions="0" time="0.247881">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testCheckboxStyling
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -446,7 +446,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:364</error>
       </testcase>
-      <testcase name="testRegisterSectionTitle" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="371" assertions="0" time="0.239178">
+      <testcase name="testRegisterSectionTitle" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="371" assertions="0" time="0.237824">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testRegisterSectionTitle
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -463,7 +463,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:382</error>
       </testcase>
-      <testcase name="testRegisterFormTitles" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="389" assertions="0" time="0.257563">
+      <testcase name="testRegisterFormTitles" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="389" assertions="0" time="0.238338">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testRegisterFormTitles
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -480,7 +480,7 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:66
 /app/tests/Browser/AppStylingTest.php:407</error>
       </testcase>
-      <testcase name="testFooterCopyright" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="414" assertions="0" time="0.230761">
+      <testcase name="testFooterCopyright" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/app/tests/Browser/AppStylingTest.php" line="414" assertions="0" time="0.231431">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\AppStylingTest::testFooterCopyright
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 
@@ -498,8 +498,8 @@ Failed to connect to localhost port 9515 after 0 ms: Couldn't connect to server
 /app/tests/Browser/AppStylingTest.php:425</error>
       </testcase>
     </testsuite>
-    <testsuite name="Tests\Browser\ExampleTest" file="/app/tests/Browser/ExampleTest.php" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="0.242052">
-      <testcase name="testBasicExample" class="Tests\Browser\ExampleTest" classname="Tests.Browser.ExampleTest" file="/app/tests/Browser/ExampleTest.php" line="16" assertions="0" time="0.242052">
+    <testsuite name="Tests\Browser\ExampleTest" file="/app/tests/Browser/ExampleTest.php" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="0.232911">
+      <testcase name="testBasicExample" class="Tests\Browser\ExampleTest" classname="Tests.Browser.ExampleTest" file="/app/tests/Browser/ExampleTest.php" line="16" assertions="0" time="0.232911">
         <error type="Facebook\WebDriver\Exception\Internal\WebDriverCurlException">Tests\Browser\ExampleTest::testBasicExample
 Facebook\WebDriver\Exception\Internal\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}]},"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"args":["--window-size=1920,1080","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--headless"]}}}
 

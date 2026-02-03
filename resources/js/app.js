@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Валидация email и пароля
+  
     const emailInput = document.getElementById('reg-email');
     const emailError = document.getElementById('error-email');
 
@@ -45,24 +45,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Добавляем функционал глазика ---
-    // Ищем все поля пароля на странице (может быть несколько форм)
     const passwordFields = document.querySelectorAll('input[type="password"]');
 
     passwordFields.forEach(passwordField => {
-        // Берем следующий соседний элемент (div с глазиком)
+        
         const toggleIcon = passwordField.parentElement.querySelector('[aria-label="Show Password"]');
-        if (!toggleIcon) return; // если глазика нет — пропускаем
+        if (!toggleIcon) return; 
 
         toggleIcon.addEventListener('click', () => {
             const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
             passwordField.setAttribute('type', type);
 
-            // Опционально меняем иконку (например fill)
+           
             const svg = toggleIcon.querySelector('svg');
             if (svg) {
-                if (type === 'text') svg.setAttribute('fill', '#1f2937'); // глаз открытый
-                else svg.setAttribute('fill', 'currentColor'); // глаз закрытый
+                if (type === 'text') svg.setAttribute('fill', '#1f2937'); 
+                else svg.setAttribute('fill', 'currentColor'); 
             }
         });
     });

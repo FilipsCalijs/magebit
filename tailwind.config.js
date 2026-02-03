@@ -31,7 +31,7 @@ module.exports = {
             sans: ['Montserrat', 'cursive'],
             },
             fontWeight: {
-                medium: 500, // добавляем вес medium, если нужно использовать через класс font-medium
+                medium: 500,
             },
 
             colors: {

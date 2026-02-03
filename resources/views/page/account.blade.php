@@ -136,7 +136,7 @@
                                 <label class="label" for="reg-password"><span>Password</span></label>
                                 <div class="control flex items-center">
                                     <input data-test="register-password" name="password" id="reg-password" type="password" class="form-input" required>
-                                    <!-- Глазик для показа/скрытия пароля -->
+                                 
                                     <div class="cursor-pointer px-4" aria-label="Show Password">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" class="w-5 h-5" width="24" height="24">
@@ -154,7 +154,7 @@
                                 <label class="label" for="reg-password-confirm"><span>Confirm Password</span></label>
                                 <div class="control flex items-center">
                                     <input data-test="register-passwordConfirm" name="password_confirmation" id="reg-password-confirm" type="password" class="form-input" required>
-                                    <!-- Глазик для показа/скрытия подтверждения пароля -->
+                                   
                                     <div class="cursor-pointer px-4" aria-label="Show Password">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" class="w-5 h-5" width="24" height="24">
