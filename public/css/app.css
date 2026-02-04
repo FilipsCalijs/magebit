@@ -867,6 +867,17 @@ select {
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.actions-toolbar .primary button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15, 131, 82);
+}
+.actions-toolbar .primary button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20, 174, 109);
+}
+.actions-toolbar .primary button:active {
+  background-color: rgb(10, 87, 55);
+}
 @tailwind forms;
 @tailwind typography;
 .sr-only {
@@ -936,6 +947,9 @@ select {
 }
 .mt-1 {
   margin-top: 0.25rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .mt-3 {
   margin-top: 0.75rem;
@@ -1408,18 +1422,83 @@ a:active {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.header-icon {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+.header-icon:hover {
+  color: rgb(15, 131, 82);
+}
+.header-icon:active {
+  color: rgb(10, 87, 55);
+}
+
+a[data-test=footer-link] {
+  font-weight: 400;
+  color: rgb(2, 23, 14);
+}
+a[data-test=footer-link]:hover {
+  color: rgb(15, 131, 82);
+}
+a[data-test=footer-link]:active {
+  color: rgb(10, 87, 55);
+}
+
+a.text-secondary {
+  color: rgb(109, 109, 109);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+a.text-secondary:hover {
+  color: rgb(15, 131, 82);
+}
+a.text-secondary:active {
+  color: rgb(10, 87, 55);
+}
+
+[type=checkbox]:hover {
+  color: rgb(15, 131, 82);
+}
+[type=checkbox]:active {
+  color: rgb(10, 87, 55);
+}
+
+.btn-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15, 131, 82);
+}
+.btn-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20, 174, 109);
+}
+.btn-primary:active {
+  background-color: rgb(10, 87, 55) !important;
+}
+
+a[data-test=header-link] {
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgb(2, 23, 14);
+  text-decoration: none;
+}
+a[data-test=header-link]:hover {
+  color: rgb(15, 131, 82);
+  text-decoration: none;
+}
+a[data-test=header-link]:active {
+  color: rgb(10, 87, 55);
+  text-decoration: none;
+}
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
-
 .hover\:no-underline:hover {
   text-decoration-line: none;
 }
-
 .disabled\:opacity-75:disabled {
   opacity: 0.75;
 }
-
 @media (min-width: 640px) {
 
   .sm\:order-1 {
@@ -1458,7 +1537,6 @@ a:active {
     padding-bottom: 0px;
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:my-0 {
@@ -1486,7 +1564,6 @@ a:active {
     justify-content: flex-start;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:relative {
@@ -1534,7 +1611,6 @@ a:active {
     padding-top: 0px;
   }
 }
-
 @media (min-width: 1280px) {
 
   .xl\:col-span-2 {

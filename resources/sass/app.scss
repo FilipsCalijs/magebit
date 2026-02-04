@@ -8,3 +8,93 @@
 @import "components/button";
 @import "components/page";
 @import "components/typography";
+
+$green-hover: rgba(15, 131, 82, 1);
+$green-active: rgba(10, 87, 55, 1);
+$dark-text: rgba(2, 23, 14, 1);
+$secondary-text: rgba(109, 109, 109, 1);
+$btn-primary: rgba(15, 131, 82, 1);
+$btn-primary-hover: rgb(20, 174, 109);
+
+.header-icon {
+    color: inherit;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: $green-hover;
+    }
+
+    &:active {
+        color: $green-active;
+    }
+}
+
+a[data-test="footer-link"] {
+    font-weight: 400;
+    color: $dark-text;
+
+    &:hover {
+        color: $green-hover;
+    }
+
+    &:active {
+        color: $green-active;
+    }
+}
+
+a.text-secondary {
+    color: $secondary-text;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: $green-hover;
+    }
+
+    &:active {
+        color: $green-active;
+    }
+}
+
+[type='checkbox'] {
+    &:hover {
+        color: $green-hover;
+    }
+
+    &:active {
+        color: $green-active;
+    }
+}
+
+.btn-primary {
+    --tw-bg-opacity: 1;
+    background-color: $btn-primary;
+
+    &:hover {
+        --tw-bg-opacity: 1;
+        background-color: $btn-primary-hover;
+    }
+
+    &:active {
+        background-color: $green-active !important;
+    }
+}
+
+a[data-test="header-link"] {
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $dark-text;
+    text-decoration: none;
+
+    &:hover {
+        color: $green-hover;
+        text-decoration: none;
+    }
+
+    &:active {
+        color: $green-active;
+        text-decoration: none;
+    }
+}
+

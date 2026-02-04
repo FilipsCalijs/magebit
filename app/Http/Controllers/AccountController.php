@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\View\View;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
@@ -16,7 +18,7 @@ class AccountController extends Controller
         return response()->view('page.account');
     }
 
-    public function login(Request $request)
+    public function login(Request $request): RedirectResponse
     {
         $request->validate([
             'email' => 'required|email',
@@ -33,7 +35,7 @@ class AccountController extends Controller
         return redirect()->route('index')->with('error', 'Invalid email or password.');
     }
 
-    public function logout(Request $request)
+    public function logout(Request $request): RedirectResponse
     {
         if (Auth::check()) {
             Auth::logout();
@@ -44,7 +46,7 @@ class AccountController extends Controller
         return redirect()->route('index');
     }
 
-    public function register(Request $request)
+    public function register(Request $request): RedirectResponse
     {
         $request->validate([
             'firstname' => 'required|string|max:255',
@@ -54,7 +56,7 @@ class AccountController extends Controller
             'subscribed' => 'sometimes|boolean',
         ]);
 
-        $user = User::create([
+        User::create([
             'firstname' => $request->firstname,
             'lastname' => $request->lastname,
             'email' => $request->email,
@@ -65,7 +67,7 @@ class AccountController extends Controller
         return redirect()->route('index')->with('success', 'User registered successfully!');
     }
 
-    public function success()
+    public function success(): View|RedirectResponse
     {
         if (Auth::check()) {
             $user = Auth::user();

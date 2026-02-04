@@ -6,7 +6,8 @@
     <title>{{ config('app.name', 'seo text here, and also desctiption for seo') }}</title>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

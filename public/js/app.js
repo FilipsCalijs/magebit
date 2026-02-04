@@ -9,11 +9,20 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   var emailInput = document.getElementById('reg-email');
-  var emailError = document.getElementById('error-email');
   var passwordInput = document.getElementById('reg-password');
   var confirmInput = document.getElementById('reg-password-confirm');
+  var firstInput = document.getElementById('firstname');
+  var lastInput = document.getElementById('lastname');
+  var emailError = document.getElementById('error-email');
+  var passwordError = document.getElementById('error-password');
   var confirmError = document.getElementById('error-password-confirm');
-  var form = emailInput.closest('form');
+  var firstError = document.getElementById('error-firstname');
+  var lastError = document.getElementById('error-lastname');
+  var regFormMessage = document.createElement('div');
+  regFormMessage.className = 'text-red-500 text-sm mt-2';
+  regFormMessage.id = 'form-message';
+  var regForm = document.getElementById('customer-register-form');
+  if (regForm) regForm.appendChild(regFormMessage);
   function validateEmail() {
     var value = emailInput.value.trim();
     var message = '';
@@ -21,29 +30,87 @@ document.addEventListener('DOMContentLoaded', function () {
     emailError.textContent = message;
     return message === '';
   }
+  function validatePassword() {
+    var value = passwordInput.value.trim();
+    var message = '';
+    if (!value) message = 'Password is required';else if (value.length < 8) message = 'The password must be at least 8 characters.';else if (!/[A-Za-z]/.test(value)) message = 'The password must contain at least one letter.';else if (!/\d/.test(value)) message = 'The password must contain at least one number.';
+    passwordError.textContent = message;
+    return message === '';
+  }
   function validateConfirm() {
     var password = passwordInput.value;
     var confirm = confirmInput.value;
     var message = '';
-    if (confirm && password !== confirm) message = 'This field value must be the same as "Password".';
+    if (!confirm) message = 'Please confirm your password';else if (password !== confirm) message = 'This field value must be the same as "Password".';
     confirmError.textContent = message;
+    return message === '';
+  }
+  function validateFirstName() {
+    var value = firstInput.value.trim();
+    var message = value ? '' : 'First name is required';
+    firstError.textContent = message;
+    return message === '';
+  }
+  function validateLastName() {
+    var value = lastInput.value.trim();
+    var message = value ? '' : 'Last name is required';
+    lastError.textContent = message;
     return message === '';
   }
   function validateAll() {
     var emailValid = validateEmail();
+    var passwordValid = validatePassword();
     var confirmValid = validateConfirm();
-    return emailValid && confirmValid;
+    var firstValid = validateFirstName();
+    var lastValid = validateLastName();
+    return emailValid && passwordValid && confirmValid && firstValid && lastValid;
   }
-  emailInput.addEventListener('blur', validateEmail);
-  confirmInput.addEventListener('blur', validateConfirm);
-  form.addEventListener('submit', function (e) {
-    if (!validateAll()) {
+  emailInput && emailInput.addEventListener('blur', validateEmail);
+  passwordInput && passwordInput.addEventListener('blur', validatePassword);
+  confirmInput && confirmInput.addEventListener('blur', validateConfirm);
+  firstInput && firstInput.addEventListener('blur', validateFirstName);
+  lastInput && lastInput.addEventListener('blur', validateLastName);
+  regForm && regForm.addEventListener('submit', function (e) {
+    regFormMessage.textContent = '';
+    var isValid = validateAll();
+    if (!isValid) {
       e.preventDefault();
-      console.log("Verification failed: errors present");
-    } else {
-      console.log("Verification succeeded");
+      regFormMessage.textContent = 'Please fix the errors above before continuing';
     }
   });
+
+  // Логин
+  var loginEmail = document.getElementById('email');
+  var loginPass = document.getElementById('pass');
+  var loginForm = loginEmail ? loginEmail.closest('form') : null;
+  var loginFormMessage = document.createElement('div');
+  loginFormMessage.className = 'text-red-500 text-sm mt-2';
+  loginFormMessage.id = 'login-form-message';
+  if (loginForm) loginForm.appendChild(loginFormMessage);
+  function validateLoginEmail() {
+    var value = loginEmail.value.trim();
+    var message = '';
+    if (!value) message = 'Email address is required';else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) message = 'Please provide a valid e-mail address';
+    return message;
+  }
+  function validateLoginPassword() {
+    var value = loginPass.value.trim();
+    var message = '';
+    if (!value) message = 'Password is required';
+    return message;
+  }
+  loginForm && loginForm.addEventListener('submit', function (e) {
+    var emailMsg = validateLoginEmail();
+    var passMsg = validateLoginPassword();
+    if (emailMsg || passMsg) {
+      e.preventDefault();
+      loginFormMessage.textContent = emailMsg || passMsg;
+    } else {
+      loginFormMessage.textContent = '';
+    }
+  });
+
+  // Show/Hide Password
   var passwordFields = document.querySelectorAll('input[type="password"]');
   passwordFields.forEach(function (passwordField) {
     var toggleIcon = passwordField.parentElement.querySelector('[aria-label="Show Password"]');
